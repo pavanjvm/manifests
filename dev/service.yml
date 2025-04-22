@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: myapp-service
 spec:
+  type: NodePort     # This exposes the service on a port on each Node
   selector:
     app: myapp
   ports:
-  - port: 9090            # Changed to 9090
-    protocol: TCP
-    targetPort: 8080       # Your application is still listening on port 8080 inside the pod
+  - port: 9090
+    targetPort: 8080
+    nodePort: 30080   # Optional: Pick a port between 30000–32767, or let K8s choose
 

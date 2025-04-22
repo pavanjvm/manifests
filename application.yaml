@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: 
+    repoURL: https://github.com/pavanjvm/manifests.git
     targetRevision: HEAD
     path: dev
   destination: 

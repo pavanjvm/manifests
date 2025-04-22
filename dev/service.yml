@@ -6,7 +6,7 @@ spec:
   selector:
     app: myapp
   ports:
-  - port: 8080
+  - port: 9090            # Changed to 9090
     protocol: TCP
-    targetPort: 8080
-  
+    targetPort: 8080       # Your application is still listening on port 8080 inside the pod
+

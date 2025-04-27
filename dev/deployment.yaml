@@ -16,6 +16,6 @@ spec:
       - name: nexus-creds
       containers:
       - name: myapp
-        image: lockin.sbs/repository/docker-repo/pavan0605/cdimages:v4
+        image: lockin.sbs/repository/docker-repo/pavan0605/cdimages:v11
         ports:
         - containerPort: 8080

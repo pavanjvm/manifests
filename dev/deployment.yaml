@@ -12,6 +12,8 @@ spec:
       labels:
         app: myapp
     spec:
+      imagePullSecrets:
+      - name: nexus-creds
       containers:
       - name: myapp
         image: 54.91.219.173:8085/repository/docker-repo/pavan0605/cdimages:v4

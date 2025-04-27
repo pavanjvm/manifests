@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -16,6 +16,6 @@ spec:
       - name: nexus-creds
       containers:
       - name: myapp
-        image: lockin.sbs/repository/docker-repo/pavan0605/cdimages:v7
+        image: lockin.sbs/repository/docker-repo/pavan0605/cdimages:v4
         ports:
         - containerPort: 8080

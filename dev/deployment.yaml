@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: pavan0605/cdimages:v2
+        image: 54.91.219.173:8085/repository/docker-repo/pavan0605/cdimages:v4
         ports:
         - containerPort: 8080
